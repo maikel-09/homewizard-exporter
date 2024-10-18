@@ -1,0 +1,2 @@
+python-homewizard-energy
+prometheus_client
