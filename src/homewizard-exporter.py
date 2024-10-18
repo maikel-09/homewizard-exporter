@@ -107,7 +107,7 @@ async def main():
                             metrics[key].info({'value': value})
                         elif isinstance(value, datetime):
                             metrics[key].info({'value': value.isoformat()})
-            await asyncio.sleep(5)
+            await asyncio.sleep(int(INTERVAL))
         except Exception as e:
             logging.error(f"Error fetching data: {e}")
 

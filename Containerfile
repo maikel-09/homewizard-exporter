@@ -1,7 +1,7 @@
 FROM python:3-slim
 
 LABEL authors="Maikel Wagteveld"
-LABEL version="v0.0.3"
+LABEL version="v0.0.4"
 
 WORKDIR /home/metrics
 COPY src/ /home/metrics
@@ -10,4 +10,4 @@ RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 9002
 
-CMD ["python3", "homewizard-exporter.py"]
+CMD ["python3", "homewizard-exporter.py", "--port", "9002"]
