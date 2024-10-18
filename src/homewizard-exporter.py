@@ -91,7 +91,7 @@ async def fetch_data():
         return data.__dict__
 
 async def main():
-    start_http_server(PORT)
+    start_http_server(int(PORT))
     logging.info(f"Started Prometheus exporter on port {PORT}")
         
     while True:

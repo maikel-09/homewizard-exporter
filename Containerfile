@@ -1,7 +1,7 @@
 FROM python:3-slim
 
 LABEL authors="Maikel Wagteveld"
-LABEL version="v0.0.2"
+LABEL version="v0.0.3"
 
 WORKDIR /home/metrics
 COPY src/ /home/metrics
